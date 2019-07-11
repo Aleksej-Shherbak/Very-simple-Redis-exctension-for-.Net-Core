@@ -4,17 +4,17 @@
         <TargetFramework>netcoreapp3.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Version>1.0.2</Version>
-        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <Company>Pushapp.ru</Company>
         <Authors>Aleksej Shherbak</Authors>
-        <PackageProjectUrl></PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/Aleksej-Shherbak/Very-simple-Redis-exctension-for-.Net-Core</PackageProjectUrl>
         <PackageIconUrl>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe076tJCUGjILzi5btvh9yJlOTZIRth6J3c-N-JA0vAk_vi4XePA</PackageIconUrl>
         <PackageTags>redis extensions</PackageTags>
         <Copyright>Copyright ©2019</Copyright>
         <Description>imple Redis extension. It gives ability to save an object to Radis db. And you don't need to serialize the to string or byte array.</Description>
-        <License>MIT</License>
         <NeutralLanguage>en</NeutralLanguage>
-        <RepositoryUrl>https://github.com/Aleksej-Shherbak/Very-simple-Redis-.Net-Core-exctension</RepositoryUrl>
+        <License>MIT</License>
+        <RepositoryUrl>https://github.com/Aleksej-Shherbak/Very-simple-Redis-exctension-for-.Net-Core</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
