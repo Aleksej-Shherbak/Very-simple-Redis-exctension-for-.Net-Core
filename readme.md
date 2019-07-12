@@ -77,8 +77,7 @@ class MyClass {
 
 
 // ...
-
-var mc = new MyClass();
+// mc - MyClass object
 
 mc.Test();
 
