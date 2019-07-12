@@ -6,20 +6,20 @@ This is very simple extension for .Net Core for Redis. The extension will add th
 
 ````
 public static void SetObject(this IDistributedCache distributedCache, string key, object value, int minutes = 5)
-    {
-        var options = new DistributedCacheEntryOptions(); 
-        
-        options.SetAbsoluteExpiration(TimeSpan.FromMinutes(minutes)); 
-        
-        distributedCache.SetString(key, JsonConvert.SerializeObject(value), options);
-    }
+{
+    var options = new DistributedCacheEntryOptions(); 
+    
+    options.SetAbsoluteExpiration(TimeSpan.FromMinutes(minutes)); 
+    
+    distributedCache.SetString(key, JsonConvert.SerializeObject(value), options);
+}
 
-    public static T GetObject<T>(this IDistributedCache distributedCache, string key)
-    {
-        var value = distributedCache.GetString(key);
+public static T GetObject<T>(this IDistributedCache distributedCache, string key)
+{
+    var value = distributedCache.GetString(key);
 
-        return value == null ? default : JsonConvert.DeserializeObject<T>(value);
-    }
+    return value == null ? default : JsonConvert.DeserializeObject<T>(value);
+}
 ````
 
 So you don't need write this every time. Extension gives you ability to save any object to redis. 
