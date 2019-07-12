@@ -72,3 +72,4 @@ Hello!!! 213,666
 Hello!!! 213,666
 ````
 
+> Note that the default cache time is 5 minutes. But you can set time manually: `_cache.SetObject("key", foo, <number of minutes is here>);`
