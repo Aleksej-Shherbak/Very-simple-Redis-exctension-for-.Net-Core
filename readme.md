@@ -57,11 +57,30 @@ class Foo
 
 // ...
 
-var foo = new Foo();
-Console.WriteLine(foo);
-_cache.SetObject("key", foo, 1);
-var cachedFoo = _cache.GetObject<Foo>("key");
-Console.WriteLine(cachedFoo);
+class MyClass {
+
+    private readonly IDistributedCache _cache;
+
+    public MyClass(IDistributedCache cache)
+    {
+        _cache = cache
+    }
+
+    public void Test(){
+        var foo = new Foo();
+        Console.WriteLine(foo);
+        _cache.SetObject("key", foo, 1);
+        var cachedFoo = _cache.GetObject<Foo>("key");
+        Console.WriteLine(cachedFoo);
+    }
+}
+
+
+// ...
+
+var mc = new MyClass();
+
+mc.Test();
 
 ````
 
